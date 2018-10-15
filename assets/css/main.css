@@ -1,0 +1,10 @@
+#section {
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat, repeat;
+  opacity: 0.6;
+  background-size: cover;
+  background-position: 50% 10%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
