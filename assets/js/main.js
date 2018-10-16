@@ -16,8 +16,8 @@ let MainController = (function(){
       }
       window.setTimeout(async function () {
         console.log("Inicia audio");
-        audio.play();
-        await sleep(6000);
+        //audio.play();
+        await sleep(2000);
         console.log("Lanza modal")
         $('#exampleModal').modal('show');
       }, 5000)
