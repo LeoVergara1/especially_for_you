@@ -11,9 +11,14 @@ let MainController = (function(){
  bindEvents = function bindEvents(){
       var audio = new Audio('https://patient-toolbox.s3.amazonaws.com/Nablez_Morat_-_La_Correcta_JxxUmYLWnig.mp3');
 
-      window.setTimeout(function () {
+      function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+      window.setTimeout(async function () {
         console.log("Inicia audio");
         audio.play();
+        await sleep(6000);
+        console.log("Lanza modal")
         $('#exampleModal').modal('show');
       }, 5000)
       console.log("Satrt bindEvents");
