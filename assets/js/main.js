@@ -9,6 +9,13 @@ let MainController = (function(){
       datepicker1:'#datepicker1'
  },
  bindEvents = function bindEvents(){
+      var audio = new Audio('https://patient-toolbox.s3.amazonaws.com/Nablez_Morat_-_La_Correcta_JxxUmYLWnig.mp3');
+
+      window.setTimeout(function () {
+        console.log("Inicia audio");
+        audio.play();
+        $('#exampleModal').modal('show');
+      }, 5000)
       console.log("Satrt bindEvents");
 
  };
@@ -30,17 +37,20 @@ let MainController = (function(){
     contentType: 'html'
     });
     $(".otro").typed({
-      strings: ["ERES UNA MUJER MUY",
-       "HERMOSA Y AVENTURERA"
+      strings: ["Sé que podría ser un poco precipitado para decirlo, pero la verdad es que ya desde la primera vez que te vi, tuve una sensación, debo aceptar que en su momento preferí ignorarla un poco ya te contaré en persona 😊",
+       "Sabes siempre me ha gustado ser detallista, y esto ya lo había pensado, así que el hecho de conocerte me hizo recordar y pensar que valdría la pena realizarlo.",
+       "La verdad es que estoy un poco sorprendido conmigo mismo porque no imaginé sentir esta sensación por alguien, lo cual me hace pensar en arriesgar y dedicártelo.",
+       "No importa el resultado después de esto, lo que tiene valor es que te lo dedico tan sólo a ti y me sentiría satisfecho sabiendo que te ha gustado.",
+       "Eres hermosa en muchos aspectos, para ser sincero en todos jeje, pero lo que mas me ha gustado es tú forma tan linda y tierna de ser así mismo eso lo complementas siendo tan dedicada en tus sueños y metas "
       ],
-      typeSpeed: 130,
+      typeSpeed: 50,
       loop: false,
       contentType: 'html'
 
   });
   $(".final").typed({
-    strings: ["¡BONITA NOCHE!"],
-    startDelay: 8000,
+    strings: ["¡Ahora la canción… tan sólo espera un poco !"],
+    startDelay: 80000,
     showCursor: false,
     typeSpeed: 200,
     loop: false,

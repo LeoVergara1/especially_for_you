@@ -31,7 +31,7 @@
                         <div class="mbr-figure image-size" style="width: 20%; font-size: 50px;"><span class="mbri-hearth mbr-iconfont mbr-iconfont-features4" style="font-size: 200px; color: rgb(255, 255, 255);"></span></div>
                         <div class="span-title">
                             <div class="span-title">
-                                    <span class="mbr-section-title display-2 text-center pad-r">Tú</span>
+                                    <span class="mbr-section-title display-2 text-center pad-r">Jacqueline</span>
                                     <span class="mbr-section-title display-2 text-center pad-r puntos"></span>
                                     <div class="row">
                                     <span class="mbr-section-title display-2 text-center otro"></span>
@@ -54,6 +54,31 @@
 
 </section>
 <div class="vue">
+    <!-- Button trigger modal
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button>-->
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Una pequeña pregunta?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                ¿Me dejarías conquistarte?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" style="margin-bottom: 0;" @click="closed">Cerrar :(</button>
+              <button type="button" class="btn btn-primary" @click="send"  data-dismiss="modal">Sip :)</button>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 
 
