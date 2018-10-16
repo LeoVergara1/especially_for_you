@@ -10,7 +10,9 @@ let MainController = (function(){
  },
  bindEvents = function bindEvents(){
       var audio = new Audio('https://patient-toolbox.s3.amazonaws.com/Nablez_Morat_-_La_Correcta_JxxUmYLWnig.mp3');
-
+      var audio1 = document.getElementById('music');
+      console.log(audio1)
+      audio1.play();
       function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
       }
