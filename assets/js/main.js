@@ -9,7 +9,6 @@ let MainController = (function(){
       datepicker1:'#datepicker1'
  },
  bindEvents = function bindEvents(){
-  $("#heart_to").on("click",()=> {$('#exampleModal').modal('show')});
       var audio1 = document.getElementById('music');
       console.log(audio1)
       function sleep(ms) {
@@ -21,6 +20,7 @@ let MainController = (function(){
         await sleep(3000);
         console.log("Lanza modal")
         $('#exampleModal').modal('show');
+        $("#heart_to").on("click",()=> {$('#exampleModal').modal('show')});
       }, 115000)
       console.log("Satrt bindEvents");
 
